@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav>DoruDia Tasks</nav>
+    <nav>Laurentiu Zamfir</nav>
   )
 }
 
