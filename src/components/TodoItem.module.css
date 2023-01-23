@@ -1,48 +1,50 @@
 .item {
-    margin: 1rem 0;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-    background-color: #f7f5ef;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: fit-content;
-    padding: 4px;
-    border-radius: 4px;
-  }
+  margin: 1rem 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  background-color: #f7f5ef;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: fit-content;
+  border-radius:6px;
+  border: 1px solid transparent;
+}
 
-  .deleteItem {
-    width: 20px;
-    height: 20px;
-    background-image: url('../../public/assets/delete-button-svgrepo-com.svg');
-    background-size: cover;
-    cursor: pointer;
-    margin-left: .5rem;
-  }
+.deleteItem {
+  width: 20px;
+  height: 20px;
+  background-image: url('../../public/assets/delete-button-svgrepo-com.svg');
+  background-size: cover;
+  cursor: pointer;
+  margin-left: .5rem;
+}
 
-  .editItem {
-    width: 20px;
-    height: 20px;
-    background-image: url('../../public/assets/pencil-edit-button-svgrepo-com.svg');
-    background-size: cover;
-    cursor: pointer;
-  }
+.editItem {
+  width: 20px;
+  height: 20px;
+  background-image: url('../../public/assets/pencil-edit-button-svgrepo-com.svg');
+  background-size: cover;
+  cursor: pointer;
+}
 
-  .icons {
-    display: flex;
-  }
+.icons {
+  display: flex;
+  margin-right: 8px;
+}
 
-  .item a {
-    width: 75%;
-    padding: .5rem;
-    text-decoration: none;
-  }
+.item a {
+  width: 75%;
+  padding: .5rem;
+  text-decoration: none;
+}
 
-  .item:has(a):hover,
-  .item:has(.active) {
-    background-color: #ccc;
-  }
+.item:has(a):hover,
+.item:has(.active) {
+  background-color: #ccc;
+  border: 1px solid rgb(146, 146, 146);
+}
 
-  .item:has(a):hover a,
-  .item:has(a.active) a {
-    color: white;
-  }
+.item:has(a):hover a,
+.item:has(a.active) a {
+  color: white;
+}
